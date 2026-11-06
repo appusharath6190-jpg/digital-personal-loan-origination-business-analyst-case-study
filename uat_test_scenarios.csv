@@ -1,0 +1,13 @@
+test_case_id,requirement_id,scenario,precondition,expected_result,priority
+TC001,FR-01,Submit with mandatory field missing,Applicant form open,Submission blocked and missing field identified,High
+TC002,FR-02,Bureau request without required consent,Consent absent,No bureau request is initiated,Critical
+TC003,FR-03,KYC mismatch response,Application submitted,Case moves to controlled manual review and final disbursal is blocked,Critical
+TC004,FR-04,Bureau service timeout,Consent present and request sent,Technical hold or approved exception path; no assumed bureau score,High
+TC005,FR-05,Affordability input missing,Required verified income unavailable,Application remains incomplete or referred per approved policy,High
+TC006,FR-06,Decision response received,Valid policy response,Outcome reason code policy version and timestamp are stored,High
+TC007,FR-07,Unauthorised override attempt,User lacks override role,Action denied and security event logged,Critical
+TC008,FR-08,Maker-checker self-approval attempt,Same user initiates and approves restricted action,Approval blocked,Critical
+TC009,FR-09,Expired offer acceptance,Offer expired,Acceptance blocked and current offer requested,High
+TC010,FR-10,Duplicate disbursal event,Same request retried,Idempotency prevents duplicate disbursal, Critical
+TC011,FR-11,Customer notification,Status reaches configured milestone,Approved template sent and delivery status logged,Medium
+TC012,FR-12,Restricted data export,User lacks export permission,Export denied and attempt logged,High

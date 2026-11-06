@@ -1,0 +1,11 @@
+application_id,channel,application_status,kyc_status,bureau_status,monthly_income_inr,monthly_obligations_inr,decision_outcome,decision_reason_code,decision_tat_hours
+APP1001,Mobile,Approved,Verified,Received,85000,18000,Approved,POLICY_PASS,3.2
+APP1002,Web,Refer,Verified,Received,62000,29000,Refer,AFFORDABILITY_REVIEW,11.5
+APP1003,Branch,Incomplete,Pending,Not_Requested,54000,12000,Incomplete,KYC_PENDING,7.0
+APP1004,Mobile,Declined,Verified,Received,41000,22000,Declined,POLICY_DECLINE,2.8
+APP1005,Web,Approved,Verified,Received,110000,25000,Approved,POLICY_PASS,4.1
+APP1006,Mobile,Technical_Hold,Verified,Unavailable,76000,15000,Refer,BUREAU_UNAVAILABLE,6.4
+APP1007,Branch,Refer,Manual_Review,Received,68000,21000,Refer,KYC_REVIEW,18.0
+APP1008,Web,Approved,Verified,Received,93000,16000,Approved,POLICY_PASS,2.5
+APP1009,Mobile,Withdrawn,Verified,Received,58000,14000,Withdrawn,CUSTOMER_WITHDRAWAL,1.2
+APP1010,Branch,Declined,Verified,Received,47000,26000,Declined,POLICY_DECLINE,5.3
